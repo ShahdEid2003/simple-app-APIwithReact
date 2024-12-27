@@ -9,7 +9,7 @@ export default function quote() {
      return <Loading />;
   return (
     <>
-      {error ? <div className="alert alert-danger">{error}</div> : ""}
+      {error ? <div className="alert alert-danger">{error}</div> : ''}
       <div className="container text-center p-3">
         <div className="row">
           <div className="col-12 shadow p-3">

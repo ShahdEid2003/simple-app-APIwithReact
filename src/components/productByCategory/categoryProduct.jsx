@@ -15,7 +15,7 @@ export default function categoryProduct() {
 
   return (
     <>
-      {error ? <div className="alert alert-danger">{error}</div> : ""}
+      {error ? <div className="alert alert-danger">{error}</div> : ''}
       <div className="container  p-3">
         <div className="row d-flex justify-content-center align-items-center ">
           {data.products.map((product) => {

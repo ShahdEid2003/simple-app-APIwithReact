@@ -6,15 +6,14 @@ import Loading from "../Loading/loader.jsx";
 export default function productDetails() {
   const { id } = useParams();
 
-  const { data, error, isLoading } = UseFetch(
-    `https://dummyjson.com/products/${id}`
-  );
+  const { data, error, isLoading } = UseFetch(`https://dummyjson.com/products/${id}`);
 
-  if (isLoading) return <Loading />;
+  if (isLoading) 
+    return <Loading />;
 
   return (
     <>
-      { error ? <div className="alert alert-danger">{error}</div> : ""}
+      {error ? <div className="alert alert-danger">{error}</div> : ''}
       <div className="container text-center p-3">
         <div className="row d-flex justify-content-center align-items-center vh-100">
           <div className="col-md-6">
