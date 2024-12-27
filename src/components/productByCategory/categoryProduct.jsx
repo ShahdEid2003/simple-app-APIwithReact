@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import UseFetch from "../../assets/hooks/useFetch.jsx";
 import Loading from "../Loading/loader.jsx";
+import { Link } from 'react-router-dom';
 
 export default function categoryProduct() {
   const { category } = useParams();
@@ -20,12 +21,10 @@ export default function categoryProduct() {
           {data.products.map((product) => {
             return (
               <div className=" col-lg-4 p-3">
-                <div
-                  key={product.id}
-                  className="bg-pink text-center shadow p-3"
-                >
+                <div key={product.id} className="bg-pink text-center shadow p-3">
                   <h4>{product.title}</h4>
                   <img src={product.thumbnail} alt={product.title} />
+                  <Link to={`/product/${product.id}`}>Details</Link>
                 </div>
               </div>
             );

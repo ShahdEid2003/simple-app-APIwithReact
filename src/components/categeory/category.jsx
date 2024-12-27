@@ -16,9 +16,9 @@ export default function category() {
         <div className="row">
           {data.map((category) => {
             return (
-              <div className="col-md-4 col-lg-3 p-3">
-                <div className="category-card bg-pink text-decoration-none shadow p-3">
-                  <Link to={`/categoryProduct/${category}`}>
+              <div className="col-md-4  p-3">
+                <div className="bg-pink shadow p-3 rounded h-100">
+                  <Link className="text-decoration-none text-dark " to={`/categoryProduct/${category}`}>
                     <h4>{category}</h4>
                   </Link>
                 </div>

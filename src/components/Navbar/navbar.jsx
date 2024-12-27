@@ -37,6 +37,16 @@ export default function navbar() {
                  proudcts
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to='/addproducts'>
+                 add proudcts
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to='/quote'>
+                Quotes
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
